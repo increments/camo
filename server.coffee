@@ -154,6 +154,7 @@ process_url = (url, transferredHeaders, resp, remaining_redirects) ->
           when 304
             srcResp.destroy()
             resp.writeHead srcResp.statusCode, newHeaders
+            resp.end()
           else
             contentType = newHeaders['content-type']
 
@@ -224,6 +225,10 @@ server = Http.createServer (req, resp) ->
       "X-XSS-Protection"        : default_security_headers["X-XSS-Protection"]
       "X-Content-Type-Options"  : default_security_headers["X-Content-Type-Options"]
       "Content-Security-Policy" : default_security_headers["Content-Security-Policy"]
+
+    transferredHeaders['If-Modified-Since'] = req.headers['if-modified-since'] if req.headers['if-modified-since']
+    transferredHeaders['If-Match'] = req.headers['if-match'] if req.headers['if-match']
+    transferredHeaders['If-None-Match'] = req.headers['if-none-match'] if req.headers['if-none-match']
 
     delete(req.headers.cookie)
 
