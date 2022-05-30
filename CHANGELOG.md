@@ -1,3 +1,16 @@
+Unreleased
+=====
+
+3.0.0
+=====
+
+* Fix certificate error (upgrade node version from v8 to v16) [5](https://github.com/increments/camo/pull/5)
+
+2.3.1
+=====
+
+* Support for Let's Encrypt root certificate changes (ISRG Root X1) [4](https://github.com/increments/camo/pull/4)
+
 2.3.0
 =====
 
