@@ -1,4 +1,4 @@
-# camo [![Build Status](https://travis-ci.org/atmos/camo.svg?branch=master)](https://travis-ci.org/atmos/camo)
+# camo [![Test](https://github.com/increments/camo/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/increments/camo/actions/workflows/test.yml)
 
 Camo is all about making insecure assets look secure.  This is an SSL image proxy to prevent mixed content warnings on secure pages served from [GitHub](https://github.com).
 

@@ -1,8 +1,3 @@
-file 'server.js' => 'server.coffee' do
-  sh "coffee -c -o . server.coffee"
-end
-task :build => 'server.js'
-
 task :bundle do
   sh("bundle install --gemfile test.gemfile")
 end
@@ -12,7 +7,7 @@ task :test do
   sh("BUNDLE_GEMFILE=test.gemfile bundle exec ruby test/proxy_test.rb")
 end
 
-task :default => [:build, :bundle, :test]
+task :default => [:bundle, :test]
 
 Dir["tasks/*.rake"].each do |f|
   load f
