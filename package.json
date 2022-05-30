@@ -3,7 +3,10 @@
   "version": "2.3.0",
   "dependencies": {},
   "engines": {
-    "node": "^6.11.1"
+    "node": "^16"
+  },
+  "scripts": {
+    "build": "coffee -c server.coffee"
   },
   "devDependencies": {
     "coffee-script": "^1.12.6"
