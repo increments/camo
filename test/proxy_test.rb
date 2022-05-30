@@ -180,7 +180,7 @@ module CamoProxyTests
   end
 
   def test_404s_on_connect_timeout
-    assert_raise RestClient::ResourceNotFound do
+    assert_raise RestClient::RequestTimeout do
       request('http://10.0.0.1/foo.cgi')
     end
   end
