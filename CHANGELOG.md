@@ -1,6 +1,8 @@
 Unreleased
 =====
 
+* Add tests on GitHub Actions [7](https://github.com/increments/camo/pull/7)
+
 3.0.0
 =====
 
