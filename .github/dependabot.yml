@@ -10,3 +10,21 @@ updates:
       timezone: "Asia/Tokyo"
     reviewers:
       - "increments/shared-dev-team"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "11:00"
+      timezone: "Asia/Tokyo"
+    reviewers:
+      - "increments/shared-dev-team"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "11:00"
+      timezone: "Asia/Tokyo"
+    reviewers:
+      - "increments/shared-dev-team"
