@@ -1,6 +1,7 @@
 Unreleased
 =====
 
+* Setup "npm" and "docker" upgrade dependency configuration [8](https://github.com/increments/camo/pull/8)
 * Add tests on GitHub Actions [7](https://github.com/increments/camo/pull/7)
 
 3.0.0
