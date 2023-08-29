@@ -14,5 +14,5 @@ ADD mime-types.json /opt/camo/
 EXPOSE 8081
 
 RUN npm install
-USER nobody
+USER node
 CMD ["npm", "start"]
