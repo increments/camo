@@ -1,6 +1,13 @@
 Unreleased
 =====
 
+<!-- Add descriptions of changes here -->
+
+3.1.0
+=====
+
+* Support node 18 [13](https://github.com/increments/camo/pull/13)
+* Add workflow to build docker image to GitHub Container Registry [14](https://github.com/increments/camo/pull/14)
 * Setup "npm" and "docker" upgrade dependency configuration [8](https://github.com/increments/camo/pull/8)
 * Add tests on GitHub Actions [7](https://github.com/increments/camo/pull/7)
 
