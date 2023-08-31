@@ -1,4 +1,4 @@
-FROM node:16.20.2
+FROM node:18.17.1
 
 RUN apt-get update && \
     apt-get -y clean && \
