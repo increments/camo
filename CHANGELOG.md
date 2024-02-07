@@ -3,6 +3,8 @@ Unreleased
 
 <!-- Add descriptions of changes here -->
 
+* Add support for Node v21 and drop support for Node v17 [16](https://github.com/increments/camo/pull/16)
+
 3.1.0
 =====
 
