@@ -231,7 +231,7 @@
   hexdec = function(str) {
     var buf, i, j, ref;
     if (str && str.length > 0 && str.length % 2 === 0 && !str.match(/[^0-9a-f]/)) {
-      buf = new Buffer(str.length / 2);
+      buf = new Buffer.alloc(str.length / 2);
       for (i = j = 0, ref = str.length; j < ref; i = j += 2) {
         buf[i / 2] = parseInt(str.slice(i, +(i + 1) + 1 || 9e9), 16);
       }
