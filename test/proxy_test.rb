@@ -48,7 +48,7 @@ module CamoProxyTests
       end
     end
 
-    response = request('http://media.ebaumsworld.com/picture/Mincemeat/Pimp.jpg')
+    response = request('https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55950/dee6d393-c8a2-887a-889e-1cf4ebd3896a.png')
     assert_equal(200, response.code)
   end
 
@@ -80,7 +80,7 @@ module CamoProxyTests
   end
 
   def test_proxy_valid_image_url
-    response = request('http://media.ebaumsworld.com/picture/Mincemeat/Pimp.jpg')
+    response = request('https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/55950/dee6d393-c8a2-887a-889e-1cf4ebd3896a.png')
     assert_equal(200, response.code)
   end
 

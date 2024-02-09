@@ -2,7 +2,7 @@ name: Test
 
 on:
   pull_request:
-  push:
+    types: [opened, synchronize, reopened, ready_for_review]
   workflow_dispatch:
   schedule:
     - cron: "0 1 * * 1" # At 01:00 (UTC) / 10:00 (JST) on Monday
