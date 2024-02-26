@@ -9,7 +9,7 @@ updates:
       time: "11:00"
       timezone: "Asia/Tokyo"
     reviewers:
-      - "increments/shared-dev-team"
+      - "increments/shared-dev-group"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -18,7 +18,7 @@ updates:
       time: "11:00"
       timezone: "Asia/Tokyo"
     reviewers:
-      - "increments/shared-dev-team"
+      - "increments/shared-dev-group"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -27,4 +27,4 @@ updates:
       time: "11:00"
       timezone: "Asia/Tokyo"
     reviewers:
-      - "increments/shared-dev-team"
+      - "increments/shared-dev-group"
