@@ -1,4 +1,4 @@
-FROM node:20.11.0
+FROM node:20.11.1
 
 RUN apt-get update && \
     apt-get -y clean && \
