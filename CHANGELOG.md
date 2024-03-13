@@ -3,6 +3,11 @@ Unreleased
 
 <!-- Add descriptions of changes here -->
 
+3.3.0
+=====
+
+* Bump node from 20.11.0 to 20.11.1 [28](https://github.com/increments/camo/pull/28)
+
 3.2.0
 =====
 
