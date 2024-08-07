@@ -188,7 +188,8 @@
               break;
             case 304:
               srcResp.destroy();
-              return resp.writeHead(srcResp.statusCode, newHeaders);
+              resp.writeHead(srcResp.statusCode, newHeaders);
+              return resp.end();
             default:
               contentType = newHeaders['content-type'];
               if (contentType == null) {
@@ -265,6 +266,15 @@
         "X-Content-Type-Options": default_security_headers["X-Content-Type-Options"],
         "Content-Security-Policy": default_security_headers["Content-Security-Policy"]
       };
+      if (req.headers['if-modified-since']) {
+        transferredHeaders['If-Modified-Since'] = req.headers['if-modified-since'];
+      }
+      if (req.headers['if-match']) {
+        transferredHeaders['If-Match'] = req.headers['if-match'];
+      }
+      if (req.headers['if-none-match']) {
+        transferredHeaders['If-None-Match'] = req.headers['if-none-match'];
+      }
       delete req.headers.cookie;
       ref2 = url.pathname.replace(/^\//, '').split("/", 2), query_digest = ref2[0], encoded_url = ref2[1];
       if (encoded_url = hexdec(encoded_url)) {
