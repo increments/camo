@@ -1,4 +1,4 @@
-FROM node:20.11.1
+FROM node:23.3.0
 
 RUN apt-get update && \
     apt-get -y clean && \
